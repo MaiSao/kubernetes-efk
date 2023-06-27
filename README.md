@@ -1,2 +1,2 @@
 # kubernetes-efk
-EFK Kubernetes manifests
+Elasticsearch-Fluentbit-Kibana EFK Kubernetes manifests
