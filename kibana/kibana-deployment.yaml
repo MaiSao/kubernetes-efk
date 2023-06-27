@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kibana
+  namespace: logging
   labels:
     app: kibana
 spec:
@@ -24,6 +25,6 @@ spec:
             cpu: 100m
         env:
           - name: ELASTICSEARCH_URL
-            value: http://elasticsearch:9200
+            value: http://elasticsearch.logging.svc.cluster.local:9200
         ports:
         - containerPort: 5601
